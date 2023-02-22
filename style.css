@@ -1,0 +1,124 @@
+/*
+Theme Name: CustomTheme
+Theme URI: https://wordpress.org/themes/CustomTheme/
+Author: the Rost team
+Author URI: http://rost.com.ua/
+Description: CustomTheme brings your site to life with immersive featured images and subtle animations. Our default theme works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: CustomTheme
+Tags: custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@font-face {
+  font-family: "Hindi Siliguri";
+  src: url("../HindiSiliguri-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hindi Siliguri";
+  src: url("../HindiSiliguri-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hindi Siliguri";
+  src: url("../fonts/HindiSiliguri-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hindi Siliguri";
+  src: url("../fonts/HindiSiliguri-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  height: 7vh;
+  padding: 15px 0;
+  background: #3F72AF;
+  color: white;
+}
+header a {
+  color: #fff;
+}
+
+.sidebar {
+  width: 25%;
+  height: 100vh;
+  background: rgb(48, 48, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  transition: all 0.4s;
+}
+.sidebar-title {
+  font-size: 42px;
+  margin: 0 0 20px;
+}
+.sidebar-nav li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.sidebar-nav__item {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+.sidebar-nav__img {
+  width: 35px;
+  height: 35px;
+  margin: 0 10px 0 0;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    opacity: 0;
+    overflow: hidden;
+    transform: translate(-100%, 0);
+  }
+  .sidebar-button {
+    width: 35px;
+    height: 45px;
+    transform: rotate(270deg);
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+  .sidebar-button span::before {
+    content: url("assets/img/arrow.svg");
+    display: block;
+    width: 35px;
+    height: 35px;
+  }
+  .sidebar.active {
+    opacity: 1;
+    overflow: visible;
+    transform: translate(0, 0);
+    width: 75%;
+  }
+  .sidebar-button.active {
+    margin: 0 75%;
+    transform: rotate(90deg);
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  min-height: 200px;
+  color: white;
+  font-size: 34px;
+  margin-top: auto;
+  background: #112D4E;
+}
+/*# sourceMappingURL=style.css.map */
