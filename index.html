@@ -8,42 +8,103 @@
     <title>Test</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
 
 
-    <main class="wrapper home">
+    <section class="sidebar">
+        <div class="sidebar-content">
+            <h2 class="sidebar-title"><a href="index.html"><span>B</span>oiled</a></h2>
+            <div class="sidebar-button">
+                <span></span>
+            </div>
 
-        <section class="sidebar">
-            <div class="sidebar-container">
-                <h2 class="sidebar-title">
-            Navigation
-        </h2>
-                <ul class="sidebar-nav">
-                    <li>
-                        <div><img src="assets/img/icon-home.svg" class="sidebar-nav__img" alt="icon"></div>
-                        <a href="#" class="sidebar-nav__item">Homepage</a>
-                    </li>
-                    <li>
-                        <div><img src="assets/img/icon-star.svg" class="sidebar-nav__img" alt="icon"></div>
-                        <a href="#" class="sidebar-nav__item">Content</a>
-                    </li>
-                    <li>
-                        <div><img src="assets/img/icon-person.svg" class="sidebar-nav__img" alt="icon"></div>
-                        <a href="#" class="sidebar-nav__item">Portfolio</a>
-                    </li>
-                    <li>
-                        <div><img src="assets/img/icon-send.svg" class="sidebar-nav__img" alt="icon"></div>
-                        <a href="#" class="sidebar-nav__item">Contact</a>
-                    </li>
-                </ul>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="#" class="sidebar-nav__item active"><i class="fa fa-home"></i>Homepage</a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-nav__item"><i class="fa fa-user"></i>About</a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-nav__item"><i class="fa fa-briefcase"></i>Portfolio</a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-nav__item"><i class="fa fa-comments"></i>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <main class="wrapper home">
+        <section class="section main">
+            <div class="container">
+                <div class="row">
+                    <div class="main-info">
+                        <h3 class="main-info__title">Greetings, my name's <span class="name">Oleksandr Neschasnij</span></h3>
+                        <h3 class="main-info__intro">I'm a <span class="type-animation">front-end developer</span></h3>
+                        <p class="main-info__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, vel?.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, nostrum!</p>
+                        <a href="#contact" class="btn info">More About Me</a>
+                    </div>
+                    <div class="main-img">
+                        <img src="assets/img/person.jpg" alt="avatar">
+                    </div>
+                </div>
             </div>
         </section>
-        <div class="sidebar-button">
-            <span></span>
-        </div>
+        <section class="section about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <p class="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum repudiandae ipsum nesciunt distinctio doloribus beatae quaerat amet cum exercitationem, suscipit eligendi consequuntur possimus cupiditate cumque sequi mollitia id obcaecati provident, numquam assumenda omnis tempore quam. Atque libero consequuntur sint velit.</p>
+                <div class="row">
+                    <div class="about-info">
+                        <h3 class="about-info__title"><span>Name:</span> Oleksandr</h3>
+                        <h3 class="about-info__title"><span>Last name:</span> Neschasnij</h3>
+                        <h3 class="about-info__title"><span>Age:</span> 18</h3>
+                        <h3 class="about-info__title"><span>Content:</span> content</h3>
 
+                    </div>
+                    <div class="about-info">
+                        <h3 class="about-info__title"><span>Hometown:</span> Vassylkiv</h3>
+                        <h3 class="about-info__title"><span>University:</span> KNEU</h3>
+                        <h3 class="about-info__title"><span>Speciality:</span> Economic cybernetics</h3>
+                        <h3 class="about-info__title"><span>Current work:</span> Student</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-box">
+                        <h3 class="about-box__title">Education</h3>
+                        <div class="about-box__content">
+                            <div class="about-box__info">
+                                <h4 class="about-box__date"><i class="fa-solid fa-calendar-days"></i>2010-2021</h4>
+                                <h4 class="about-box__subtitle">Vasylkivskij Lyzeum Uspich</h4>
+                                <p class="about-box__text">I've been learning at lyzeum for 11 years and i've received a full secondary education.</p>
+                            </div>
+                            <div class="about-box__info">
+                                <h4 class="about-box__date"><i class="fa-solid fa-calendar-days"></i>2021-???</h4>
+                                <h4 class="about-box__subtitle">Kyiv National Economic University</h4>
+                                <p class="about-box__text">Faculty of the Institute of Internet Technologies in Economics, specialty: economic cybernetics</p>
+                            </div>
+                            <div class="about-box__info">
+                                <h4 class="about-box__date"><i class="fa-solid fa-calendar-days"></i>31.11.2022-03.02.2021</h4>
+                                <h4 class="about-box__subtitle">LemonSchool: front-end courses</h4>
+                                <p class="about-box__text">That was the beggining of my advanced learning of HTML, CSS, JS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-box">
+                        <h3 class="about-box__title">Skills</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="assets/js/custom.js"></script>
 </body>
